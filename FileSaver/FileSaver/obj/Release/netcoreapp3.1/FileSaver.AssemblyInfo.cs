@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fuat Meydan")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Saves single or multiple IFormFile to given directory and return save path(s).")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2")]

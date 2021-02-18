@@ -7,8 +7,10 @@ using System.Text;
 
 namespace FileSaver
 {
-    public class Save
+    public class Save:IDisposable
     {
+        private bool disposedValue;
+
         /// <summary>
         /// Saves single IFormFile to given directory. 
         /// </summary>
@@ -35,7 +37,7 @@ namespace FileSaver
                         var FileExtension = Path.GetExtension(fileName);
                         newFileName = myUniqueFileName + FileExtension;
                         fileName = Path.Combine(Directory.GetCurrentDirectory(), directory) + $@"\{newFileName}";
-                        filePath = "/Content/" + newFileName;
+                        filePath = directory + newFileName;
                         using (FileStream fs = File.Create(fileName))
                         {
                             formFile.CopyTo(fs);
@@ -93,7 +95,7 @@ namespace FileSaver
                             var FileExtension = Path.GetExtension(fileName);
                             newFileName = myUniqueFileName + FileExtension;
                             fileName = Path.Combine(Directory.GetCurrentDirectory(), directory) + $@"\{newFileName}";
-                            filePath = "/Content/" + newFileName;
+                            filePath = directory + newFileName;
                             using (FileStream fs = File.Create(fileName))
                             {
                                 formFile.CopyTo(fs);
@@ -123,5 +125,36 @@ namespace FileSaver
 
         }
 
+
+       
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: dispose managed state (managed objects)
+                }
+
+                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
+                // TODO: set large fields to null
+                disposedValue = true;
+            }
+        }
+
+        // // TODO: override finalizer only if 'Dispose(bool disposing)' has code to free unmanaged resources
+        // ~Save()
+        // {
+        //     // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+        //     Dispose(disposing: false);
+        // }
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
+        }
     }
 }
