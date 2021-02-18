@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSaver", "FileSaver\FileSaver.csproj", "{96540010-2166-4005-A38C-98921C840894}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96540010-2166-4005-A38C-98921C840894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96540010-2166-4005-A38C-98921C840894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96540010-2166-4005-A38C-98921C840894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96540010-2166-4005-A38C-98921C840894}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A328CED-6736-4D10-9D34-824507EED456}
+	EndGlobalSection
+EndGlobal

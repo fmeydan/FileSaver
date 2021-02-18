@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "F6jrnMXYyFONo1i+w9clqrOO4XFuB4O/D4hz5/Mxk0jgtv0Db7gGHWNRbaQF41zdGcHtCa5i2JGeU5Vjn5Dd/A==",
+  "success": true,
+  "projectFilePath": "D:\\source\\repos\\FileSaver\\FileSaver\\FileSaver\\FileSaver\\FileSaver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fuat\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.3\\microsoft.aspnetcore.http.features.5.0.3.nupkg.sha512",
+    "C:\\Users\\Fuat\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Fuat\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
