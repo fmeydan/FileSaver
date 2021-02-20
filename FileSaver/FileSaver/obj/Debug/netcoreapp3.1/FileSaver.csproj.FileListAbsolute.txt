@@ -1,0 +1,9 @@
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\bin\Debug\netcoreapp3.1\FileSaver.deps.json
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\bin\Debug\netcoreapp3.1\FileSaver.dll
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\bin\Debug\netcoreapp3.1\FileSaver.pdb
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Debug\netcoreapp3.1\FileSaver.csprojAssemblyReference.cache
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Debug\netcoreapp3.1\FileSaver.AssemblyInfoInputs.cache
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Debug\netcoreapp3.1\FileSaver.AssemblyInfo.cs
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Debug\netcoreapp3.1\FileSaver.csproj.CoreCompileInputs.cache
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Debug\netcoreapp3.1\FileSaver.dll
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Debug\netcoreapp3.1\FileSaver.pdb

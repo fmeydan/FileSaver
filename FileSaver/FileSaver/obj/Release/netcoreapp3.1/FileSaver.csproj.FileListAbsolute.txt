@@ -7,3 +7,12 @@ D:\source\repos\FileSaver\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.
 D:\source\repos\FileSaver\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.csproj.CoreCompileInputs.cache
 D:\source\repos\FileSaver\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.dll
 D:\source\repos\FileSaver\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.pdb
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\bin\Release\netcoreapp3.1\FileSaver.deps.json
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\bin\Release\netcoreapp3.1\FileSaver.dll
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\bin\Release\netcoreapp3.1\FileSaver.pdb
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.csprojAssemblyReference.cache
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.AssemblyInfoInputs.cache
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.AssemblyInfo.cs
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.csproj.CoreCompileInputs.cache
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.dll
+D:\Projeler\web\FileSaver\FileSaver\FileSaver\obj\Release\netcoreapp3.1\FileSaver.pdb

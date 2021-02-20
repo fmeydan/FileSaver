@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FileSaver</id>
+    <version>1.0.2</version>
+    <authors>Fuat Meydan</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/fmeydan/FileSaver</projectUrl>
+    <description>Saves single or multiple IFormFile to given directory and return save path(s).</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.AspNetCore.Http.Features" version="5.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Projeler\web\FileSaver\FileSaver\FileSaver\bin\Debug\netcoreapp3.1\FileSaver.dll" target="lib\netcoreapp3.1\FileSaver.dll" />
+  </files>
+</package>

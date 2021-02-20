@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿//Created by Fuat Meydan 19/02/2021
+
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,10 +20,10 @@ namespace FileSaver
         /// <param name="directory">Default directory is wwwroot/content</param>
         /// <param name="size">Default size is 10MB</param>
         /// <returns></returns>
-        public BaseMessage SingleFile(IFormFile formFile,string directory= "wwwroot/Content", int size = 10240 * 1024)
+        public BaseMessage SingleFile(IFormFile formFile,string directory= "", int size = 10240 * 1024)
         {
-            //string directory = "wwwroot/Content";
-            Directory.CreateDirectory(directory);
+            var dbDirectory = "wwwroot/Content/" + directory;
+            Directory.CreateDirectory(dbDirectory);
 
             if (formFile != null)
             {
@@ -36,9 +38,9 @@ namespace FileSaver
                         var myUniqueFileName = Convert.ToString(Guid.NewGuid());
                         var FileExtension = Path.GetExtension(fileName);
                         newFileName = myUniqueFileName + FileExtension;
-                        fileName = Path.Combine(Directory.GetCurrentDirectory(), directory) + $@"\{newFileName}";
-                        filePath = directory + newFileName;
-                        using (FileStream fs = File.Create(fileName))
+                        fileName = Path.Combine(Directory.GetCurrentDirectory(), dbDirectory) + $"/{newFileName}";
+                        filePath = Path.Combine("/Content", directory, newFileName);
+                        using (FileStream fs = System.IO.File.Create(fileName))
                         {
                             formFile.CopyTo(fs);
                             fs.Flush();
@@ -74,8 +76,8 @@ namespace FileSaver
         /// <returns></returns>
         public BaseMessage MultipleFiles(IFormFileCollection formFiles,string directory= "wwwroot/Content", int size = 4096 * 1024)
         {
-            //string directory = "wwwroot/Content";
-            Directory.CreateDirectory(directory);
+            var dbDirectory = "wwwroot/Content/" + directory;
+            Directory.CreateDirectory(dbDirectory);
             List<string> pathList = new List<string>();
             if (formFiles != null)
             {
@@ -94,14 +96,13 @@ namespace FileSaver
                             var myUniqueFileName = Convert.ToString(Guid.NewGuid());
                             var FileExtension = Path.GetExtension(fileName);
                             newFileName = myUniqueFileName + FileExtension;
-                            fileName = Path.Combine(Directory.GetCurrentDirectory(), directory) + $@"\{newFileName}";
-                            filePath = directory + newFileName;
-                            using (FileStream fs = File.Create(fileName))
+                            fileName = Path.Combine(Directory.GetCurrentDirectory(), dbDirectory) + $"/{newFileName}";
+                            filePath = Path.Combine("/Content", directory, newFileName);
+                            using (FileStream fs = System.IO.File.Create(fileName))
                             {
                                 formFile.CopyTo(fs);
                                 fs.Flush();
                             }
-
                             pathList.Add(filePath);
 
                         }
@@ -155,6 +156,15 @@ namespace FileSaver
             // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
             Dispose(disposing: true);
             GC.SuppressFinalize(this);
+        }
+
+
+
+        public class BaseMessage
+        {
+            public dynamic Data { get; set; }
+            public string Message { get; set; }
+            public bool Status { get; set; }
         }
     }
 }
